@@ -1,31 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Login from './components/Login';
+import PropertyList from './components/PropertyList';
+import PropertyForm from './components/PropertyForm';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HeroSection from './homepage';
 
 function App() {
+  const [user, setUser] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HeroSection />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Router>
+      <Navbar user={user} />
+      <Routes>
+        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/" element={<PropertyList user={user} />} />
+        {user?.role === "agent" && (
+          <Route path="/add-property" element={<PropertyForm />} />
+        )}
+      </Routes>
+    </Router>
   );
 }
 

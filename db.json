@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Agent John",
+      "email": "agent@example.com",
+      "role": "agent",
+      "password": "agent123"
+    },
+    {
+      "id": "2",
+      "name": "Buyer Jane",
+      "email": "buyer@example.com",
+      "role": "buyer",
+      "password": "buyer123"
+    }
+  ],
+  "properties": [
+    {
+      "id": "1",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "250000",
+      "agentId": 1,
+      "image": "https://i.pinimg.com/736x/20/e5/53/20e5536509d38753c888b66af7c245f8.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "260000",
+      "agentId": 2,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "250000",
+      "agentId": 1,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "260000",
+      "agentId": 1,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "250000",
+      "agentId": 1,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "260000",
+      "agentId": 2,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "250000",
+      "agentId": 1,
+      "image": "apartment.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Cozy Apartment",
+      "description": "A cozy 2-bedroom apartment.",
+      "price": "260000",
+      "agentId": 2,
+      "image": "apartment.jpg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "4002",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "b331",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "163f",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "a1ed",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "ce6f",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "6acf",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "fe7f",
+      "propertyId": "2",
+      "buyerId": "2"
+    },
+    {
+      "id": "0ff0",
+      "propertyId": "1",
+      "buyerId": "2"
+    },
+    {
+      "id": "8163",
+      "propertyId": "1",
+      "buyerId": "2"
+    }
+  ]
+}
